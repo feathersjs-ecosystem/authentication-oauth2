@@ -1,5 +1,5 @@
 import Debug from 'debug';
-import { merge } from 'lodash.merge';
+import merge from 'lodash.merge';
 
 const debug = Debug('feathers-authentication-oauth2:verify');
 
