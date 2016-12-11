@@ -15,7 +15,7 @@ export default function OAuthHandler (options = {}) {
 
     debug(`Executing '${options.name}' OAuth Callback`);
     debug(`Calling create on '${authSettings.path}' service with`, entity);
-    app.service(authSettings.path).create(req[options.entity], params).then(result => {
+    app.service(authSettings.path).create(req, params).then(result => {
       res.data = result;
 
       if (options.successRedirect) {
