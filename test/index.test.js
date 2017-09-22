@@ -42,7 +42,10 @@ describe('feathers-authentication-oauth2', () => {
         github: {
           clientID: '1234',
           clientSecret: 'secret',
-          scope: ['user']
+          scope: ['user'],
+          redirectOptions: {
+            someOption: true
+          }          
         }
       };
 
@@ -110,6 +113,16 @@ describe('feathers-authentication-oauth2', () => {
       expect(app.passport.options).to.have.been.calledOnce;
 
       app.passport.options.restore();
+    });
+
+    it('registers the refirect options on strategy options', () => {
+      sinon.spy(authentication.express, 'authenticate');
+      app.configure(oauth2(config));
+      app.setup();
+
+      expect(authentication.express.authenticate).to.have.been.calledWith(config.name, globalConfig.github.redirectOptions);
+
+      authentication.express.authenticate.restore();
     });
 
     describe('passport strategy options', () => {
