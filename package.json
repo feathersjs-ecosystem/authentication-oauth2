@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@feathersjs/authentication": "^2.0.0",
-    "@feathersjs/express": "^1.0.0",
+    "@feathersjs/express": "^1.1.2",
     "@feathersjs/feathers": "^3.0.0",
     "body-parser": "^1.15.2",
     "chai": "^4.0.2",
