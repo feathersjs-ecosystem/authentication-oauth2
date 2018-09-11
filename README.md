@@ -1,13 +1,10 @@
 # @feathersjs/authentication-oauth2
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/authentication-oauth2.svg)](https://greenkeeper.io/)
+> __Important:__ The code for this module has been moved into the main Feathers repository at [feathersjs/feathers](https://github.com/feathersjs/feathers) ([package direct link](https://github.com/feathersjs/feathers/tree/master/packages/authentication-oauth2)). Please open issues and pull requests there. No changes in your existing Feathers applications are necessary.
 
 [![Build Status](https://travis-ci.org/feathersjs/authentication-oauth2.png?branch=master)](https://travis-ci.org/feathersjs/authentication-oauth2)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/ba4d86601a687bb6e960/test_coverage)](https://codeclimate.com/github/feathersjs/authentication-oauth2/test_coverage)
-[![Dependency Status](https://img.shields.io/david/feathersjs/authentication-oauth2.svg?style=flat-square)](https://david-dm.org/feathersjs/authentication-oauth2)
-[![Download Status](https://img.shields.io/npm/dm/@feathersjs/authentication-oauth2.svg?style=flat-square)](https://www.npmjs.com/package/@feathersjs/authentication-oauth2)
 
-> An OAuth2 authentication strategy for feathers-authentication using Passport
+An OAuth2 authentication strategy for feathers-authentication using Passport
 
 ## Installation
 
